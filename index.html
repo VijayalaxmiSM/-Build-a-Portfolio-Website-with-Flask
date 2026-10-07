@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>My Portfolio</h1>
+
+    <h2>Vijayalakshmi</h2>
+
+    <p>
+        I am a BTech Electronics and Communication Engineering student.
+    </p>
+
+    <h2>About Me</h2>
+
+    <p>
+        I am interested in Python, web development and electronics.
+    </p>
+
+    <h2>My Skills</h2>
+
+    <p>Python | HTML | CSS | MySQL | Flask</p>
+
+    <h2>My Projects</h2>
+
+    <p>Online Car Rental System</p>
+    <p>Data Analysis using Python</p>
+    <p>Voice Controlled Assistant</p>
+
+    <h2>Contact Me</h2>
+
+    <form action="/contact" method="POST">
+
+        <input type="text"
+               name="name"
+               placeholder="Enter your name"
+               required>
+
+        <br><br>
+
+        <input type="email"
+               name="email"
+               placeholder="Enter your email"
+               required>
+
+        <br><br>
+
+        <textarea name="message"
+                  placeholder="Enter your message"
+                  required></textarea>
+
+        <br><br>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</body>
+</html>
